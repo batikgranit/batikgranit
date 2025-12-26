@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batik Granit | Official Store</title>
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #f7f5f2;
+      color: #2b2b2b;
+    }
+
+    /* HEADER */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .topbar {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #5a3a2b;
+    }
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #333;
+    }
+    nav a:hover { color: #8d5a3b; }
+
+    /* HERO */
+    .hero {
+      height: 70vh;
+      background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+      url('https://images.unsplash.com/photo-1601379327928-75a8c1a6cfd4');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .hero a {
+      padding: 12px 30px;
+      background: #c8a25a;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+    }
+
+    /* SECTION */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 50px;
+      color: #5a3a2b;
+    }
+
+    /* COLLECTION */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: .3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+    }
+    .card .info {
+      padding: 20px;
+      text-align: center;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .price { font-weight: 600; color: #8d5a3b; }
+
+    /* STORY */
+    .story {
+      background: #eee6db;
+      text-align: center;
+    }
+    .story p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2b1a12;
+      color: #fff;
+      padding: 40px 20px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 30px;
+    }
+    footer h4 { margin-bottom: 15px; }
+    footer p, footer a {
+      color: #ddd;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    @media(max-width:768px){
+      .hero h1{ font-size:34px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="logo">BATIK GRANIT</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Collection</a>
+      <a href="#">About</a>
+      <a href="#">Store</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>WARISAN NUSANTARA</h1>
+    <p>Batik Premium dengan Sentuhan Modern</p>
+    <a href="#">Explore Collection</a>
+  </div>
+</div>
+
+<section>
+  <h2>Featured Collection</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x600?text=Batik+Parang">
+      <div class="info">
+        <h3>Parang Heritage</h3>
+        <p class="price">Rp 450.000</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x600?text=Kawung">
+      <div class="info">
+        <h3>Kawung Classic</h3>
+        <p class="price">Rp 475.000</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x600?text=Mega+Mendung">
+      <div class="info">
+        <h3>Mega Mendung</h3>
+        <p class="price">Rp 520.000</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <h2>Cerita Batik Granit</h2>
+  <p>
+    Batik Granit menghadirkan batik berkualitas tinggi yang menggabungkan
+    filosofi tradisional dengan desain modern. Setiap helai kain adalah
+    karya seni yang dikerjakan dengan ketelitian dan kebanggaan budaya.
+  </p>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>Batik Granit</h4>
+      <p>Official Batik Store Indonesia</p>
+    </div>
+    <div>
+      <h4>Customer Care</h4>
+      <p>WhatsApp: 0812-3456-7890</p>
+      <p>Email: info@batikgranit.id</p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <p>Instagram</p>
+      <p>Facebook</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
